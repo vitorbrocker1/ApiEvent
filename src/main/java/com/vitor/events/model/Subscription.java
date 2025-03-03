@@ -23,5 +23,41 @@ public class Subscription {
     @JoinColumn(name = "indication_user_id", nullable = true)
     private User indication;
 
+    public Integer getSubscriptionNumber() {
+        return subscriptionNumber;
+    }
+
+    public void setSubscriptionNumber(Integer subscriptionNumber) {
+        this.subscriptionNumber = subscriptionNumber;
+    }
+
+    public Event getEvent() {
+        return event;
+    }
+
+    public void setEvent(Event event) {
+        this.event = event;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public User getIndication() {
+        return indication;
+    }
+
+    public void setIndication(User indication) {
+        this.indication = indication;
+    }
+
+    public User getSubscriber() {
+        return user;  // Retorna o usuário associado à inscrição
+    }
 
 }
+
